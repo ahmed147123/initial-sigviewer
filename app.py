@@ -28,28 +28,23 @@ class toolBar:
 	def __init__(self, master):
 		myFrame = tk.Frame(master)
 		# open file button + the icon
-		self.openImg = tk.PhotoImage(file="folder1.png")
-		self.imgLabel = tk.Label (image= self.openImg)
+		self.openImg = tk.PhotoImage(file="images/folder1.png")
 		self.openButton = tk.Button(myFrame , image=self.openImg , command=self.printing,borderwidth=0)
 		self.openButton.pack(side=tk.LEFT ,padx=10)
 		#save as button + the icon
-		self.saveImg = tk.PhotoImage(file="floppy1.png")
-		self.imgLabe2 = tk.Label (image= self.saveImg)
+		self.saveImg = tk.PhotoImage(file="images/floppy1.png")
 		self.saveAsButton =tk.Button(myFrame , image=self.saveImg , command=self.printing ,borderwidth=0)
 		self.saveAsButton.pack(side=tk.LEFT)
 		# scale button + the icon
-		self.scaleImg = tk.PhotoImage(file="scale.png")
-		self.imgLabe3 = tk.Label (image= self.scaleImg)
+		self.scaleImg = tk.PhotoImage(file="images/scale.png")
 		self.scaleButton = tk.Button(myFrame , image=self.scaleImg , command=self.printing,borderwidth=0)
 		self.scaleButton.pack(side=tk.LEFT ,padx=10)
 
-		self.zoomInImg = tk.PhotoImage(file="zoomIn.png")
-		self.imgLabe3 = tk.Label (image= self.zoomInImg)
+		self.zoomInImg = tk.PhotoImage(file="images/zoomIn.png")
 		self.scaleButton = tk.Button(myFrame , image=self.zoomInImg , command=self.printing,borderwidth=0)
 		self.scaleButton.pack(side=tk.LEFT ,padx=10)
 
-		self.zoomOutImg = tk.PhotoImage(file="zoomOut.png")
-		self.imgLabe3 = tk.Label (image= self.zoomOutImg)
+		self.zoomOutImg = tk.PhotoImage(file="images/zoomOut.png")
 		self.scaleButton = tk.Button(myFrame , image=self.zoomOutImg , command=self.printing,borderwidth=0)
 		self.scaleButton.pack(side=tk.LEFT ,padx=10)
 
