@@ -60,17 +60,4 @@ root = tk.Tk()
 app = Application(master=root)
 tool = toolBar(root)
 app.mainloop()
-			############################### tool bar ###############
- #            toolbar = frame (root)
- #            openButton = Button(toolbar , text="Open" , command=)
- #            openButton.pack(side=LEFT)
- #            saveAsButton = Button(toolbar , text="save As" , command=)
- #            openButton.pack(side=LEFT)
- #            toolbar.pack(side=top, fill=x)
 
-
- #            hamada = toolbar(root)	
-	# myFrame.pack()
-log = PhotoImage(file="C:/Users/ahmed nasser/Desktop/sigviewer/signal-viewer")
-imgLabel = label (image= log)
-imgLabel.pack()
