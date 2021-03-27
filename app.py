@@ -2,7 +2,7 @@ import tkinter as tk
 from file_explorer import File_Explorer
 from PIL import Image, ImageTk
 
-class Application(tk.Frame):
+class Application(me):
 	def __init__(self, master=None):
 		super().__init__(master)
 		self.master = master
@@ -37,7 +37,7 @@ class toolBar:
 		self.saveAsButton.pack(side=tk.LEFT)
 		# scale button + the icon
 		self.scaleImg = tk.PhotoImage(file="images/scale.png")
-		self.scaleButton = tk.Button(myFrame , image=self.scaleImg , command=self.printing,borderwidth=0)
+		self.scaleButton = tk.Button(myFrame , image=self.scaleImg , command=self.scalling,borderwidth=0)
 		self.scaleButton.pack(side=tk.LEFT ,padx=10)
 
 		self.zoomInImg = tk.PhotoImage(file="images/zoomIn.png")
@@ -53,6 +53,10 @@ class toolBar:
 
 	def printing(self):
 		print("clicked and working ")
+
+	def scalling(self):
+		top = Toplevel()
+		top.title("scalling window")
 
 
 
